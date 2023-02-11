@@ -530,8 +530,8 @@ body {
   height: -moz-max-content;
   height: max-content;
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-  --tw-gradient-from: #6b21a8;
-  --tw-gradient-to: rgb(107 33 168 / 0);
+  --tw-gradient-from: #581c87;
+  --tw-gradient-to: rgb(88 28 135 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #3b065e;
   background-size: cover;
@@ -729,7 +729,14 @@ body .curriculum{
 .curriculum .content {
   background-image: url('./assets/Asset 2.svg');
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 640px){
+  .curriculum .content{
+    background-size: cover;
+  }
 }
 
 @media (min-width: 640px){

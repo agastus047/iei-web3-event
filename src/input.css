@@ -14,7 +14,7 @@
 body {
     /* background-color: #3b065e; */
     @apply text-slate-50 
-    bg-gradient-to-b from-purple-800 to-[#3b065e] bg-cover bg-no-repeat
+    bg-gradient-to-b from-purple-900 to-[#3b065e] bg-cover bg-no-repeat
     h-max ;
 }
 
@@ -105,7 +105,7 @@ body .curriculum {
 .curriculum .content {
     background-image: url('./assets/Asset 2.svg');
     @apply sm:grid sm:grid-rows-5
-    bg-no-repeat bg-contain ;
+    bg-no-repeat bg-contain bg-center max-[640px]:bg-cover;
 }
 
 .curriculum .content .list:nth-child(2),
