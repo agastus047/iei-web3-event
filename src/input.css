@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 640px) {
+    body .instructors {
+        background-image: url('./assets/Asset 5.svg');
+    }
+}
+
+body {
+    /* background-color: #3b065e; */
+    @apply text-slate-50 
+    bg-gradient-to-b from-purple-800 to-[#3b065e] bg-cover bg-no-repeat
+    h-max ;
+}
+
+body .top {
+    @apply grid grid-cols-2 justify-items-center items-center
+    mt-8 ml-4;
+}
+
+.top .image img {
+    @apply h-44 sm:h-56;
+}
+
+.top .title {
+    @apply grid grid-rows-3 justify-items-center items-center
+    sm:gap-y-3;
+}
+
+.top .title div:first-child {
+    @apply sm:text-4xl text-xl font-[1000];
+}
+
+.top .title button {
+    @apply border-2 border-solid border-red-400 rounded-full
+    w-36 hover:bg-[#651C69];
+}
+
+body .content {
+    @apply px-4 sm:pr-16;
+}
+
+.content h3 {
+    @apply text-xl font-sourcesans font-bold
+    my-3;
+}
+
+body .instructors {
+    @apply px-4 sm:pr-16 mt-7
+    bg-no-repeat bg-contain bg-center;
+}
+
+.instructors h3 {
+    @apply text-xl font-sourcesans font-bold
+    my-5;
+}
+
+.instructors .content {
+    @apply flex justify-between gap-10
+    max-[640px]:flex-col;
+}
+
+.instructors .content .instr {
+    @apply flex flex-col max-[640px]:items-center;
+}
+
+.instructors .content .instr:nth-child(2) {
+    @apply sm:items-end;
+}
+
+.instructors .content .instr .name {
+    @apply text-xl font-sourcesans font-semibold;
+}
+
+.instructors .content .instr img {
+    @apply h-48 w-48 border-solid border-red-400 rounded-md border-2;
+}
+
+body .curriculum {
+    @apply px-4;
+}
+
+.curriculum h3 {
+    @apply text-xl font-sourcesans font-bold
+    my-5;
+}
+
+.curriculum .list {
+    @apply mb-5 sm:mb-0;
+}
+
+.curriculum .list h2 {
+    @apply text-lg font-sourcesans font-semibold mb-3;
+}
+
+.curriculum .list ul {
+    @apply list-disc list-inside;
+}
+
+.curriculum .content {
+    background-image: url('./assets/Asset 2.svg');
+    @apply sm:grid sm:grid-rows-5
+    bg-no-repeat bg-contain ;
+}
+
+.curriculum .content .list:nth-child(2),
+.curriculum .content .list:nth-child(4) {
+    @apply sm:justify-self-end;
+}
+
+body .contact {
+    @apply px-4 mt-8 mb-14;
+}
+
+.contact h3 {
+    @apply text-xl font-sourcesans font-bold
+    my-5;
+}
+
+.contact div {
+    @apply text-lg;
+}
